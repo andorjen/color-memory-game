@@ -60,6 +60,7 @@ function flipCard(card) {
 
   if (!this.classList.contains('flipped')) {
     this.style.backgroundColor = this.dataset.color
+    this.classList.add("flipped")
     gameRound.push(this)
   }
   if (gameRound.length === 2) {
@@ -71,13 +72,13 @@ function flipCard(card) {
 
 function checkPair() {
   if (gameRound[0].dataset.color === gameRound[1].dataset.color) {
-    gameRound[0].classList.add("flipped")
-    gameRound[1].classList.add("flipped")
     successfulPair += 1;
     if (successfulPair === 5) {
       congrats();
     }
   } else {
+    gameRound[0].classList.remove("flipped")
+    gameRound[1].classList.remove("flipped")
     unFlipCard(gameRound[0]);
     unFlipCard(gameRound[1]);
   }
