@@ -1,0 +1,50 @@
+/* you can add to or change this. */
+#game {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#game div{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.button {
+  display: block;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 19px;
+  margin-top: 30px;
+}
+
+
+
+
+.success {
+  border-radius: 8px;
+  color: rgba(255,255,255,0.5);
+  position: relative;
+  top: 0;
+  left: 0;
+  width:600px;
+  height:100%;
+  background-color:#000;
+  opacity:0.5;
+  display: block;
+}
+.success #congrats {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 37%;
+}
+
+  
